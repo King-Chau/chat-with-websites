@@ -68,7 +68,7 @@ def get_response(user_input):
     return response['answer']
 
 # app config
-st.set_page_config(page_title="网页内容问题解答", page_icon="🤖")
+st.set_page_config(page_title="网页内容问答", page_icon="🤖")
 st.title("网页内容问题解答")
 
 # sidebar
