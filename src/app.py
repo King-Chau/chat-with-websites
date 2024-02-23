@@ -93,8 +93,8 @@ else:
     if user_query is not None and user_query != "":
         with st.spinner('处理中：' + user_query):
             response = get_response(user_query)
-        st.session_state.chat_history.append(HumanMessage(content=user_query))
-        st.session_state.chat_history.append(AIMessage(content=response))
+            st.session_state.chat_history.append(HumanMessage(content=user_query))
+            st.session_state.chat_history.append(AIMessage(content=response))
         
        
 
