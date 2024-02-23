@@ -47,11 +47,11 @@ def get_conversational_rag_chain(retriever_chain):
     llm = ChatGoogleGenerativeAI(model="gemini-pro")
     
     
-    prompt = ChatPromptTemplate.from_template("""Answer the following question based only on the provided context in Chinese:
+    prompt = ChatPromptTemplate.from_template("""仅根据上下文，回答问题:
     <context>
     {context}
     </context>
-    Question: {input}""")
+    问题: {input}""")
     
     stuff_documents_chain = create_stuff_documents_chain(llm, prompt)
     
