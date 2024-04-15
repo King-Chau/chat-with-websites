@@ -74,10 +74,10 @@ st.title("网页内容问答")
 # sidebar
 with st.sidebar:
     st.header("设置")
-    website_url = st.text_input("网页URL，例如：https://news.sina.cn/2024-02-18/detail-inaimsqk9262976.d.html")
+    website_url = st.text_input("网页URL，例如：https://www.sohu.com/a/771769125_119038?scm=1102.xchannel:1649:110036.0.1.0~10007.8000.0.0.6634&spm=smpc.channel_114.block3_77_O0F7zf_1_fd.1.1713159411838W5agl8p_1524")
 
 if website_url is None or website_url == "":
-    st.info("仅供效果测试，请不要大量调用，谢谢！请在左侧输入网页URL，部分网站有反爬机制，请用新浪新闻测试: https://news.sina.cn")
+    st.info("仅供效果测试，请不要大量调用，谢谢！请在左侧输入网页URL，部分网站有反爬机制，请用搜狐新闻测试: https://www.sohu.com/")
 
 else:
     # session state
